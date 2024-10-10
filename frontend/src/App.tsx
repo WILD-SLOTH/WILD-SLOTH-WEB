@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Home/Home";
 import Products from "./Products/Products";
 import Orders from './Orders/Orders'
+import Payments from './Payments/Payments'
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
               <Link to="/">Home</Link>
               <Link to="/catalog">Catalog</Link>
               <Link to="/orders">Orders</Link>
+              <Link to="/payments">Payments</Link>
             </div>
           </header>
           <aside className="sidebar">
@@ -55,6 +57,7 @@ function App() {
               <Route path="/catalog" element={<Products />} />
               <Route path="orders" element={<Orders />}></Route>
               <Route path="/order/:id" element={<OrderDetail />}></Route>
+              <Route path="payments" element={<Payments />}></Route>
             </Routes>
           </main>
           <footer className="footer">
