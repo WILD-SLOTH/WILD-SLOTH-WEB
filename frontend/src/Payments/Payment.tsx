@@ -1,18 +1,18 @@
 import React from 'react';
 
-import CheckoutSteps from '../payment/CheckoutSteps';
+import CheckoutSteps from './CheckoutSteps';
 
 function PaymentScreen() {
     const submitHandler = () => {
         alert("Payment processing...")
     };
 
-    return {
+    return (
         <div>
-            <CheckoutSteps step1 step2 step3></CheckoutSteps>
+            <CheckoutSteps step1 step2 step3 />
             <div className="form">
                 <form onSubmit={submitHandler}>
-                    <ul className="form-container>
+                    <ul className="form-container">
                         <li>
                             <h2>Payment</h2>
                         </li>

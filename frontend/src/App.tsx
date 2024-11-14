@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Home/Home";
 import Products from "./Products/Products";
 import Orders from './Orders/Orders'
-import Payments from './Payments/Payments'
+import OrderDetail from './Orders/OrderDetail'
+import Payments from './Payments/Payment'
 
 function App() {
 
