@@ -10,7 +10,7 @@ function Orders() {
             </div>
             <div className="order-list">
                 <table className="table">
-                <thread>
+                <thead>
                     <tr>
                         <th>ID</th>
                         <th>DATE</th>
@@ -21,7 +21,7 @@ function Orders() {
                         <th>DELIVERED</th>
                         <th>ACTIONS</th>
                     </tr>
-                </thread>
+                </thead>
                 <tbody>
                     {data.orders.map((order) => (
                         <tr key={order._id}>
@@ -29,10 +29,10 @@ function Orders() {
                             <td>{order.createdAt}</td>
                             <td>{order.totalPrice}</td>
                             <td>{order.user.name}</td>
-                            <td>{order.isPaid}</td>
+                            <td>{order.ispaid}</td>
                             <td>{order.paidAt}</td>
                             <td>{order.isDelivered.toString()}</td>
-                            <td>{order.deliverableData}</td>
+                            <td>{order.DeliveredDate}</td>
                             <td>
                                 <Link to={"/order/" + order._id} className="button secondary">
                                     details
